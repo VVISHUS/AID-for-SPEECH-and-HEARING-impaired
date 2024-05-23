@@ -1,0 +1,139 @@
+/* General Styles */
+html, body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+/* Headings */
+h3, h4 {
+    color: #0077cc;
+    margin: 2px;
+}
+
+/* Text Styles */
+.txtFPS, .txtLogSpeed, .txtSF, .txtGloss {
+    font-family: monospace;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #e33;
+    width: auto; /* Adjust width as needed */
+}
+
+/* Control Panel */
+.divCtrlPanel {
+    position: relative;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Avatar Canvas */
+.canvasAv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Avatar Container */
+.divAv {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #cfd8dc;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bbb;
+    padding: 10px;
+}
+
+/* Avatar Styles */
+.CWASAAvatar {
+    position: relative;
+    background-color: #cfd8dc;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+/* GUI Styles */
+.CWASAGUI {
+    text-align: center;
+    position: relative;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+/* Additional Styles */
+.txtaSiGMLText, .statusLog, .txtSiGMLURL, .statusExtra, .menuAv {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    width: auto; /* Adjust width as needed */
+}
+
+/* Information Span */
+.spanInfo {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Applet */
+.stocApplet {
+    visibility: hidden;
+    height: 1px;
+}
+
+/* Display Styles */
+.menuAv {
+    width: auto; /* Adjust width as needed */
+}
+
+.displayed { display: block; }
+.undisplayed { display: none; }
+
+/* Add any additional styles or overrides here */
+#mySF{
+    display: none;
+}
+#myGloss{
+    display: none;
+}
+#myFPS{
+    display: none;
+}
+
+/*loader*/
+.loader {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+.hidden {
+    display: none;
+  }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
