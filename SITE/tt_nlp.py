@@ -1,21 +1,12 @@
 import spacy
 from nltk.stem.snowball import SnowballStemmer as SBS
 
-def lemmatization(text):
-    doc = nlp(text)
-    lemmatized_words = [token.lemma_ for token in doc]
-    return lemmatized_words
-
 def conv_txt(fname):
     nlp = spacy.load("en_core_web_sm")
     normal_sub = ""
     with open(fname,'r') as subs:
         normal_sub = subs.read()
     doc = nlp(normal_sub)
-    # for token in doc:
-    #     print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_,
-    #            token.shape_, token.is_alpha, token.is_stop)
-    # normal_sub = normal_sub.upper()
     normal_sub = normal_sub.title()
     new_sub = ""
     print("Input Text: ",normal_sub)
