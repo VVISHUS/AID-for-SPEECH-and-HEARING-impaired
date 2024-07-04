@@ -1,6 +1,5 @@
 import spacy
 from nltk.stem.snowball import SnowballStemmer as SBS
-import re
 
 def lemmatization(text):
     doc = nlp(text)
