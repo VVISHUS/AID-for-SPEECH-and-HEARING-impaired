@@ -1,5 +1,4 @@
 import spacy
-from spacy import displacy 
 from nltk.stem.snowball import SnowballStemmer as SBS
 import re
 
